@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Password Generator</title>
+  </head>
+  <body>
+    <section class="generator">
+      <div class="text-content">
+        <h1>Generate a random password</h1>
+        <h2>Never use and insecure password again.</h2>
+        <p>
+          Integer dapibus et nunc in venenatis. Donec in est pharetra, dapibus
+          orci non, tincidunt magna. Ut porttitor, felis id varius ultrices,
+          arcu risus fringilla lacus, at laoreet justo magna eu lorem.
+        </p>
+      </div>
+      <div class="input">
+        <div class="check-boxes">
+          <div class="box">
+          <input id="checkbox-one" type="checkbox" checked />
+          <label for="checkbox-one">Uppercase</label>
+        </div><div class="box">
+          <input id="checkbox-two" type="checkbox" checked />
+          <label for="checkbox-two">Number</label>
+        </div><div class="box"></div>
+          <input id="checkbox-three" type="checkbox" checked />
+          <label for="checkbox-three">Symbols</label>
+        </div></div>
+        <div class="number-input-container">
+          <label for="number-input">Number of characteres</label>
+          <input type="number" id="number-input" value="15" />
+        </div>
+      </div>
+
+      <div class="output">
+        <button class="btn" onclick="generatePassword()">
+          Generate passwords
+        </button>
+        <div class="password-fields">
+          <div class="field-container">
+            <p id="first-pass">First Password:</p>
+          </div>
+          <div class="field-container">
+            <p id="second-pass">Second Password:</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
